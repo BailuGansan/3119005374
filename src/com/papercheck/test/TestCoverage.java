@@ -13,8 +13,7 @@ public class TestCoverage {
     @Test
     public void TestApplicaiton(){
         long start = System.currentTimeMillis();
-        Application.main(new String[]{"D:\\tests\\orig.txt", "D:\\tests\\orig_0.8_dis_10.txt", "D:\\tests\\result.txt"});
-        //Application.main(new String[]{"D:\\tests\\2.txt", "D:\\tests\\3.txt", "D:\\tests\\result.txt"});
+        Application.main(new String[]{"D:\\tests\\orig.txt", "D:\\tests\\orig_0.8_add.txt", "D:\\tests\\result.txt"});
         System.out.println("耗时：" +(System.currentTimeMillis() - start) + "毫秒");
     }
 

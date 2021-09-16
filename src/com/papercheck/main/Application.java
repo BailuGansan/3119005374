@@ -14,6 +14,12 @@ public class Application {
         List<Word> txt1 = CuttingWordsUtil.cuttingWords(new File(args[0]));
         List<Word> txt2 = CuttingWordsUtil.cuttingWords(new File(args[1]));
 
+        // 如果都为空则输出提示信息并结束程序
+        if(txt1.isEmpty() && txt2.isEmpty()){
+            System.out.println("错误，文件为空");
+            System.exit(0);
+        }
+
         // 调用SimpleCommonWords类中的简单共有词算法进行相似度计算
         double result = SimpleCommonWords.similarityCalculate(txt1, txt2);
 
@@ -22,6 +28,6 @@ public class Application {
         System.out.println("------------------------");
         System.out.println("结果文件路径：" + args[2]);
 
-        //System.exit(0);
+        System.exit(0);
     }
 }

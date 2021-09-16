@@ -14,7 +14,6 @@ public class DocumentUtil {
                 while ((s = read.readLine())!= null){
                     result.append(System.lineSeparator() + s);
                 }
-                System.out.println(result);
                 read.close();
             } catch (Exception e){
                 e.printStackTrace();
